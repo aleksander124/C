@@ -9,49 +9,44 @@ int main(void)
     setlocale(LC_ALL,"");
     do {
         std::cout << "[1] Dodawanie"
-        << std::endl << "[2] Odejmowanie"
-        << std::endl << "[3] Mnozenie"
-        << std::endl << "[4] Dzielenie"
-        << std::endl << "[5] Rezygnuj"
-        << std::endl << "Twoje polecenie: ";
-
-        std::cin >> polecenie;
+        << endl << "[2] Odejmowanie"
+        << endl << "[3] Mnozenie"
+        << endl << "[4] Dzielenie"
+        << endl << "[5] Rezygnuj"
+        << endl << "Twoje polecenie: ";
+        cin >> polecenie;
 
         if ( polecenie == 5){
             break;
         }
-
-        std::cout << "Podaj pierwsza liczbe:";
-        std::cin >> a;
-        std::cout << "Podaj druga liczbe:";
-        std::cin >> b;
+        cout << "Podaj pierwsza liczbe:";
+        cin >> a;
+        cout << "Podaj druga liczbe:";
+        cin >> b;
 
         switch ( polecenie ) {
-        case 1:
-
-            std::cout << "Wynik: " << a + b << std::endl;
+        case 1:{
+            cout << "Wynik: " << a + b << endl;
             break;
-
-        case 2:
-
-            std::cout << "Wynik: " << a - b << std::endl;
+          }
+        case 2:{
+            cout << "Wynik: " << a - b << endl;
             break;
-
-        case 3:
-
-            std::cout << "Wynik: " << a * b << std::endl;
+          }
+        case 3:{
+            cout << "Wynik: " << a * b << endl;
             break;
-
-        case 4:
-
-            std::cout << "Wynik: " << a / b << std::endl;
+          }
+        case 4:{
+            cout << "Wynik: " << a / b << endl;
             break;
-
-        default:
-            std::cout << "Nieprawidlowe polecenie." << std::endl;
+          }
+        default:{
+            cout << "Nieprawidlowe polecenie." << endl;
+          }
         }
-    } while( polecenie != 5 );
-
-    std::cout << "Do zobaczenia";
+    } while( polecenie != 5 );{
+    cout << "Do zobaczenia";
+  }
     return 0;
 }
