@@ -8,7 +8,7 @@ int main(void)
 {
     setlocale(LC_ALL,"");
     do {
-        std::cout << "[1] Dodawanie"
+        cout << "[1] Dodawanie"
         << endl << "[2] Odejmowanie"
         << endl << "[3] Mnozenie"
         << endl << "[4] Dzielenie"
