@@ -11,7 +11,7 @@ int main(){
   cin >> znak ;
   cout << '\n' << '\n';
 
- if (znak== 'A' || znak== 'E' || znak=='I' || znak=='O' || znak=='U') {
+ if (znak== 'A' || znak== 'E' || znak== 'I' || znak== 'O' || znak== 'U') {
     cout << "Podana przez Ciebie litera > " << znak << " < Jest samogloska\n" ;
   }
   else{

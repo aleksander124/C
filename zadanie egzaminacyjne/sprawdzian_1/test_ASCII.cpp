@@ -20,7 +20,7 @@ int main(){
       cout << "Podana przez Ciebie litera > "<< znak << " < Nie jest samogloska\n" ;
     }
   }
-  else if(znak > 60 && znak < 123){
+  else if(znak > 96 && znak < 123){
     cout << "Podana przez Ciebie litera jest mala\n";
     if (znak== 'a' || znak== 'e' || znak== 'i' || znak== 'o' || znak== 'u'){
       cout << "Podana przez Ciebie litera > " << znak << " < Jest samogloska\n" ;
@@ -30,5 +30,6 @@ int main(){
     }
   }
   else{
-    cout << "Blad. > " << znak << " < To nie jest litera";
+    cout << "Blad! > " << znak << " < To nie jest litera";
   }
+}
